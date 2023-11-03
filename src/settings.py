@@ -57,6 +57,7 @@ REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
 
 CITATION_URL: Optional[str] = "https://data.acfr.usyd.edu.au/ag/treecrops/2016-multifruit/"
 AUTHORS: Optional[List[str]] = ["Suchet Bargoti", "James Underwood"]
+AUTHORS_CONTACTS: Optional[List[str]] = ["james.underwood@sydney.edu.au", "suchet.bargoti@sydney.edu.au"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "University of Sydney, Australia"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://www.sydney.edu.au/about-us.html"
@@ -110,6 +111,7 @@ def get_settings():
     settings["repository"] = REPOSITORY
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT
